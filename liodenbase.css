@@ -851,14 +851,25 @@ body .topbar a[href*="logout"]:hover {
    LOGOUT
    ========================================================= */
 
-a[href="/logout.php"] {
-    color: #f7edd5 !important;
+/* =========================================================
+   TOP BAR — CURRENCY + LOGOUT
+   ========================================================= */
+
+/* Logout */
+.topbar a[href="/logout.php"] {
+    color: #ecd49b !important;
+    opacity: 1 !important;
     font-weight: bold !important;
     text-decoration: none !important;
     text-shadow: none !important;
 }
 
-a[href="/logout.php"]:hover {
-    color: #fff8df !important;
-    text-shadow: 0 0 6px rgba(231, 190, 91, 0.55) !important;
+.topbar a[href="/logout.php"]:link,
+.topbar a[href="/logout.php"]:visited,
+.topbar a[href="/logout.php"]:active {
+    color: #ecd49b !important;
+}
+
+.topbar a[href="/logout.php"]:hover {
+    color: #f7edd5 !important;
 }
