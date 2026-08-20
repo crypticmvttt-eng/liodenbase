@@ -827,15 +827,7 @@ body .topbar a[href*="logout"]:hover {
     text-shadow:
         0 0 6px rgba(231, 190, 91, 0.55) !important;
 }
-/* =========================================================
-   SILVER BEETLE AMOUNT
-   ========================================================= */
-
 #silverBeetlesAmt {
-    color: #f7edd5 !important;
-}
-   /* Silver Beetle currency */
-#silverBeetlesAmt {
-    color: #f7edd5 !important;
-    text-shadow: none !important;
+    color: red !important;
+    background: yellow !important;
 }
