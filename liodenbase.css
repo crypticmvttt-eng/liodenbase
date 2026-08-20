@@ -1530,3 +1530,31 @@ body {
 .col-md-3 {
     background: transparent !important;
 }
+/* =========================================================
+   V12 — GREEK / GOLDEN CATEGORY IMAGES
+   ========================================================= */
+
+/* Unsorted Lions */
+img[src*="unsortedlionsbanner.png"] {
+    content: url("https://i.pinimg.com/1200x/81/f7/09/81f709645e9b2a5d35bcea626f8b621b.jpg") !important;
+}
+
+/* Pregnant / Nesting Lionesses */
+img[src*="nestingbanner.png"] {
+    content: url("https://i.pinimg.com/736x/07/af/55/07af5553d6f5afd5d9178864f9358b50.jpg") !important;
+}
+
+/* Pride Overview */
+img[src*="prideoverviewbanner.png"] {
+    content: url("https://i.pinimg.com/736x/5b/21/2a/5b212a4b4ee9c66f92c4056cd4303fc5.jpg") !important;
+}
+
+/* Den / Cave */
+img[src*="cavedefault.jpg"] {
+    content: url("https://i.pinimg.com/1200x/fc/cf/89/fccf89521551e7fcfba44ef36786007e.jpg") !important;
+}
+
+/* Unsorted Beetles */
+img[src*="beetleunsorted.png"] {
+    content: url("https://i.pinimg.com/736x/47/91/79/4791794b1560a23dad27d31304494dbd.jpg") !important;
+}
