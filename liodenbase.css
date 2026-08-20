@@ -1256,3 +1256,73 @@ a[href="/logout.php"]:hover {
 #commentBox .comment .bad:hover {
     background: #f1dcae !important;
 }
+/* =========================================================
+   V8 — UNIFIED COMMENT PANEL
+   ========================================================= */
+
+/* Outer comment section */
+#commentBox {
+    background: #fffaf0 !important;
+    border: 1px solid #c99b50 !important;
+    border-radius: 9px !important;
+    padding: 5px !important;
+
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 247, 220, 0.9),
+        0 2px 8px rgba(76, 43, 22, 0.08) !important;
+}
+
+/* Individual messages */
+#commentBox .comment {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+
+    padding: 9px 8px !important;
+    margin-bottom: 0 !important;
+}
+
+/* Subtle separator between messages */
+#commentBox .comment + .comment {
+    border-top: 1px solid rgba(201, 155, 80, 0.28) !important;
+}
+
+/* Inner decorative frame around the whole comment area */
+#commentBox::after {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 3px;
+    border: 1px solid rgba(201, 155, 80, 0.30);
+    border-radius: 6px;
+    pointer-events: none;
+}
+
+/* Make the comment area suitable for the decorative frame */
+#commentBox {
+    position: relative !important;
+}
+
+/* =========================================================
+   COMMENT SCROLLBAR
+   ========================================================= */
+
+#commentBox::-webkit-scrollbar {
+    width: 8px;
+}
+
+#commentBox::-webkit-scrollbar-track {
+    background: rgba(236, 212, 155, 0.30);
+    border-radius: 8px;
+}
+
+#commentBox::-webkit-scrollbar-thumb {
+    background: #c99b50;
+    border: 2px solid #fffaf0;
+    border-radius: 8px;
+}
+
+#commentBox::-webkit-scrollbar-thumb:hover {
+    background: #b98635;
+}
