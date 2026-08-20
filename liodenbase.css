@@ -1053,12 +1053,8 @@ a[href="/logout.php"]:hover {
 }
 /* =========================================================
    V5 — GREEK GILDED FRAMES
-   Subtle filigree + matching message boxes
+   Subtle filigree + matching chat boxes
    ========================================================= */
-
-/* ---------------------------------------------------------
-   PANEL FRAME
-   --------------------------------------------------------- */
 
 .panel {
     position: relative;
@@ -1068,7 +1064,7 @@ a[href="/logout.php"]:hover {
         inset 0 0 0 1px rgba(255, 247, 220, 0.9) !important;
 }
 
-/* Inner decorative line */
+/* Inner decorative frame */
 .panel::after {
     content: "";
     position: absolute;
@@ -1078,11 +1074,7 @@ a[href="/logout.php"]:hover {
     pointer-events: none;
 }
 
-/* ---------------------------------------------------------
-   GILDED CORNER ORNAMENTS
-   --------------------------------------------------------- */
-
-/* Top-left curl */
+/* Small gilded curl */
 .panel-heading::after {
     content: "❧";
     position: absolute;
@@ -1095,7 +1087,7 @@ a[href="/logout.php"]:hover {
     pointer-events: none;
 }
 
-/* Small ornamental line beneath heading */
+/* Decorative line under panel headings */
 .panel-heading {
     position: relative;
     padding-left: 27px !important;
@@ -1116,18 +1108,12 @@ a[href="/logout.php"]:hover {
     );
 }
 
-/* ---------------------------------------------------------
-   CHAT / MESSAGE BOXES
-   --------------------------------------------------------- */
+/* =========================================================
+   CHAT BOXES
+   ========================================================= */
 
-/* Common Lioden message/comment containers */
-.comment,
-.comment-box,
-.message,
-.message-box,
-.bugbox-comment,
-.comment-container {
-    background: #fffaf0 !important;
+.chat_light,
+.chat_dark {
     border: 1px solid #c99b50 !important;
     border-radius: 8px !important;
     box-shadow:
@@ -1135,23 +1121,20 @@ a[href="/logout.php"]:hover {
         0 2px 6px rgba(76, 43, 22, 0.08) !important;
 }
 
-/* Give message headers the same gilded appearance */
-.comment-header,
-.message-header {
-    background: linear-gradient(
-        180deg,
-        #f8dfaa 0%,
-        #e8c47d 100%
-    ) !important;
-    color: #633817 !important;
-    border-bottom: 1px solid #c99b50 !important;
+.chat_light {
+    background: #fffaf0 !important;
+    color: #51351e !important;
 }
 
-/* ---------------------------------------------------------
-   SMALL GOLDEN ORNAMENT
-   --------------------------------------------------------- */
+.chat_dark {
+    background: #f1dfb9 !important;
+    color: #51351e !important;
+}
 
-/* Decorative divider */
+/* =========================================================
+   GOLDEN DIVIDERS
+   ========================================================= */
+
 .panel-body > hr {
     border: none !important;
     height: 1px !important;
@@ -1166,9 +1149,9 @@ a[href="/logout.php"]:hover {
     ) !important;
 }
 
-/* ---------------------------------------------------------
+/* =========================================================
    GENTLE GOLDEN HOVER
-   --------------------------------------------------------- */
+   ========================================================= */
 
 .panel:hover {
     box-shadow:
