@@ -848,14 +848,13 @@ body .topbar a[href*="logout"]:hover {
 }
 
 /* Logout */
-.topbar a[href="/logout.php"] {
+a[href="/logout.php"] {
     color: #f7edd5 !important;
     font-weight: bold !important;
     text-shadow: none !important;
 }
 
-/* Hover */
-.topbar a[href="/logout.php"]:hover {
+a[href="/logout.php"]:hover {
     color: #fff8df !important;
     text-shadow: 0 0 6px rgba(231, 190, 91, 0.55) !important;
 }
