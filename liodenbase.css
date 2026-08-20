@@ -847,10 +847,14 @@ body .topbar a[href*="logout"]:hover {
     text-shadow: none !important;
 }
 
-/* Logout */
+/* =========================================================
+   LOGOUT
+   ========================================================= */
+
 a[href="/logout.php"] {
     color: #f7edd5 !important;
     font-weight: bold !important;
+    text-decoration: none !important;
     text-shadow: none !important;
 }
 
