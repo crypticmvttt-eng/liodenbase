@@ -1,0 +1,795 @@
+/* =========================================================
+   GOLDEN SUN — LIODEN DEN CSS
+   BASE V2
+   Golden lion / ancient sunlight / ethereal temple
+   ========================================================= */
+
+
+/* =========================================================
+   COLOUR PALETTE
+   ========================================================= */
+
+:root {
+    /* darkest colours */
+    --brown-black: #28170d;
+    --brown-dark: #3a2414;
+    --brown: #51351e;
+    --brown-soft: #704b29;
+
+    /* golds */
+    --gold-dark: #9a6827;
+    --gold: #b98635;
+    --gold-light: #d8b361;
+    --gold-pale: #ecd49b;
+
+    /* light colours */
+    --cream-dark: #dfc997;
+    --cream: #f0dfb8;
+    --cream-light: #f7edd5;
+    --ivory: #fbf5e7;
+
+    /* effects */
+    --gold-border: rgba(164, 112, 39, 0.45);
+    --gold-border-soft: rgba(164, 112, 39, 0.25);
+    --brown-shadow: rgba(48, 27, 11, 0.22);
+}
+
+
+/* =========================================================
+   MAIN PAGE BACKGROUND
+   ========================================================= */
+
+body {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(231, 190, 91, 0.30) 0%,
+            rgba(231, 190, 91, 0.12) 18%,
+            rgba(231, 190, 91, 0) 45%
+        ),
+        linear-gradient(
+            180deg,
+            #5b3b21 0%,
+            #432a18 42%,
+            #2b1a10 100%
+        );
+
+    background-attachment: fixed;
+
+    color: var(--brown-dark);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   MAIN SITE CONTAINER
+   ========================================================= */
+
+.container.main {
+    background: rgba(247, 237, 213, 0.96) !important;
+
+    border: 1px solid rgba(183, 133, 53, 0.35) !important;
+
+    border-radius: 0 0 8px 8px;
+
+    box-shadow:
+        0 8px 30px rgba(35, 20, 9, 0.35) !important;
+}
+
+
+/* =========================================================
+   LEFT / MAIN CONTENT COLUMN
+   ========================================================= */
+
+.col-md-9 {
+    background: transparent !important;
+
+    border-right: 1px solid
+        rgba(164, 112, 39, 0.18);
+}
+
+
+/* =========================================================
+   TOP USER BAR
+   ========================================================= */
+
+.topbar {
+    background:
+        rgba(76, 43, 22, 0.92) !important;
+
+    border: none !important;
+
+    border-top: none !important;
+
+    color: var(--cream) !important;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+}
+
+.topbar a,
+.topbar a:visited {
+    color: var(--gold-pale) !important;
+}
+
+.topbar a:hover {
+    color: #fff3c7 !important;
+
+    text-decoration: none;
+
+    text-shadow:
+        0 0 7px rgba(231, 190, 91, 0.55);
+}
+
+
+/* =========================================================
+   MAIN NAVIGATION
+   ========================================================= */
+
+.navbar {
+    background:
+        linear-gradient(
+            180deg,
+            #d9ad52 0%,
+            #c18b31 100%
+        ) !important;
+
+    border: none !important;
+
+    border-bottom: 2px solid
+        rgba(103, 61, 22, 0.45) !important;
+
+    box-shadow:
+        0 3px 8px rgba(54, 31, 12, 0.18);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+}
+
+.navbar li a {
+    color: var(--brown-dark) !important;
+
+    font-weight: bold;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.navbar li a:hover {
+    background:
+        rgba(255, 237, 190, 0.35) !important;
+
+    color: #2e1a0d !important;
+
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+   ========================================================= */
+
+.breadcrumb {
+    background:
+        rgba(255, 247, 229, 0.85) !important;
+
+    border: 1px solid
+        var(--gold-border-soft) !important;
+
+    border-radius: 6px;
+
+    color: var(--brown-soft) !important;
+
+    box-shadow:
+        0 2px 7px var(--brown-shadow);
+}
+
+.breadcrumb a {
+    color: var(--gold-dark) !important;
+}
+
+.breadcrumb .active {
+    color: var(--brown-soft) !important;
+}
+
+
+/* =========================================================
+   ALERT / NOTIFICATION BOXES
+   ========================================================= */
+
+.alert {
+    background:
+        rgba(245, 229, 191, 0.90) !important;
+
+    border: 1px solid
+        var(--gold-border-soft) !important;
+
+    border-radius: 6px !important;
+
+    color: var(--brown-dark) !important;
+
+    box-shadow:
+        0 2px 7px rgba(65, 39, 17, 0.08);
+}
+
+.alert a {
+    color: var(--gold-dark) !important;
+}
+
+/* warning / danger */
+
+.alert-warning,
+.alert-danger {
+    background:
+        rgba(231, 201, 139, 0.90) !important;
+
+    border-color:
+        rgba(164, 112, 39, 0.35) !important;
+
+    color: var(--brown-dark) !important;
+}
+
+
+/* =========================================================
+   MAIN HEADINGS
+   ========================================================= */
+
+h1 {
+    color: var(--brown-dark) !important;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 36px;
+
+    font-weight: bold;
+
+    text-shadow:
+        0 1px 0 rgba(255, 246, 220, 0.8);
+}
+
+h2 {
+    color: var(--brown-dark) !important;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+}
+
+h3 {
+    color: var(--brown-soft) !important;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 22px !important;
+}
+
+
+/* =========================================================
+   SIDEBAR PANELS
+   ========================================================= */
+
+.panel {
+    background:
+        rgba(250, 242, 222, 0.94) !important;
+
+    border: 1px solid
+        var(--gold-border-soft) !important;
+
+    border-radius: 7px !important;
+
+    box-shadow:
+        0 3px 10px rgba(62, 37, 16, 0.10) !important;
+
+    color: var(--brown-dark) !important;
+}
+
+.panel h3 {
+    color: var(--brown-soft) !important;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+}
+
+.panel a {
+    color: var(--gold-dark) !important;
+}
+
+
+/* =========================================================
+   PROGRESS BARS
+   ========================================================= */
+
+.progress {
+    background:
+        rgba(116, 79, 39, 0.16) !important;
+
+    border-radius: 8px !important;
+
+    box-shadow:
+        inset 0 1px 2px rgba(50, 29, 11, 0.10);
+}
+
+.progress-bar {
+    background:
+        linear-gradient(
+            90deg,
+            #b77b29,
+            #d5ad57
+        ) !important;
+
+    border-radius: 8px !important;
+}
+
+.progress div {
+    color: var(--brown-dark) !important;
+
+    text-shadow:
+        0 1px rgba(255, 245, 218, 0.65);
+}
+
+
+/* =========================================================
+   CHAT
+   ========================================================= */
+
+.chat_light {
+    background:
+        rgba(250, 242, 222, 0.90) !important;
+
+    border: 1px solid
+        var(--gold-border-soft) !important;
+
+    color: var(--brown-dark) !important;
+}
+
+.chat_dark {
+    background:
+        rgba(230, 210, 167, 0.75) !important;
+
+    color: var(--brown-dark) !important;
+}
+
+
+/* =========================================================
+   MAIN TABLES
+   ========================================================= */
+
+.table {
+    background:
+        rgba(248, 237, 208, 0.88) !important;
+
+    border: 1px solid
+        var(--gold-border) !important;
+
+    border-collapse: separate;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 3px 12px rgba(55, 32, 13, 0.10);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   TABLE HEADERS
+   ========================================================= */
+
+.top,
+.bottom,
+th {
+    background:
+        linear-gradient(
+            180deg,
+            rgba(225, 187, 105, 0.95),
+            rgba(198, 145, 53, 0.92)
+        ) !important;
+
+    border: none !important;
+
+    color: var(--brown-dark) !important;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-weight: bold;
+
+    text-shadow:
+        0 1px rgba(255, 239, 194, 0.65);
+}
+
+.top {
+    border-radius: 9px 9px 0 0;
+}
+
+.bottom {
+    border-radius: 0 0 9px 9px;
+}
+
+td.bottom a {
+    color: var(--brown-dark) !important;
+
+    text-decoration: none !important;
+}
+
+
+/* =========================================================
+   LEFT TABLE CELLS
+   ========================================================= */
+
+.table .left {
+    background:
+        rgba(229, 207, 161, 0.72) !important;
+
+    color: var(--brown-dark) !important;
+
+    border-color:
+        rgba(164, 112, 39, 0.16) !important;
+}
+
+
+/* =========================================================
+   INNER TABLES
+   ========================================================= */
+
+.inner-table {
+    background: transparent !important;
+
+    border-collapse: separate;
+}
+
+.inner-table .left {
+    background:
+        rgba(226, 203, 157, 0.62) !important;
+
+    color: var(--brown-dark) !important;
+
+    border-radius: 5px;
+}
+
+.inner-table .right {
+    background:
+        rgba(251, 245, 231, 0.70) !important;
+
+    color: var(--brown-dark) !important;
+
+    border-radius: 5px;
+}
+
+
+/* =========================================================
+   ALTERNATING TABLE ROWS
+   ========================================================= */
+
+.right_odd {
+    background:
+        rgba(235, 216, 176, 0.60) !important;
+
+    color: var(--brown-dark) !important;
+}
+
+.right_cub {
+    background:
+        rgba(226, 199, 143, 0.70) !important;
+
+    color: var(--brown-dark) !important;
+}
+
+
+/* =========================================================
+   CAVES / MOUNDS
+   ========================================================= */
+
+.cave-grid,
+.mound-grid {
+    background:
+        rgba(238, 218, 177, 0.78) !important;
+
+    border: 1px solid
+        var(--gold-border) !important;
+
+    border-radius: 8px !important;
+
+    box-shadow:
+        0 2px 7px rgba(60, 35, 14, 0.10);
+}
+
+
+/* =========================================================
+   FEATURE PANELS
+   King Dynasty / Pride Dynasty / Achievements / Showcase
+   ========================================================= */
+
+.feature,
+div.left {
+    background:
+        rgba(244, 228, 190, 0.76) !important;
+
+    border: 1px solid
+        var(--gold-border-soft) !important;
+
+    border-radius: 8px !important;
+
+    color: var(--brown-dark) !important;
+}
+
+
+/* =========================================================
+   FORM ELEMENTS
+   ========================================================= */
+
+input,
+select,
+textarea {
+    background:
+        rgba(251, 246, 232, 0.95) !important;
+
+    border: 1px solid
+        var(--gold-border) !important;
+
+    border-radius: 6px !important;
+
+    box-shadow:
+        inset 0 1px 3px rgba(60, 35, 13, 0.08) !important;
+
+    color: var(--brown-dark) !important;
+
+    text-shadow: none !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color:
+        var(--gold) !important;
+
+    outline: none;
+
+    box-shadow:
+        0 0 6px rgba(185, 134, 53, 0.30) !important;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+input[type="button"],
+input[type="submit"],
+button,
+button.button {
+    background:
+        linear-gradient(
+            180deg,
+            #e3bf72 0%,
+            #c18a32 100%
+        ) !important;
+
+    border: 1px solid
+        #9c6827 !important;
+
+    border-radius: 7px !important;
+
+    box-shadow:
+        0 2px 5px rgba(57, 32, 12, 0.18);
+
+    color: var(--brown-dark) !important;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    text-shadow:
+        0 1px rgba(255, 239, 194, 0.60);
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+button:hover,
+button.button:hover {
+    background:
+        linear-gradient(
+            180deg,
+            #edcf8a 0%,
+            #ce9740 100%
+        ) !important;
+
+    color: #2d190b !important;
+
+    box-shadow:
+        0 3px 9px rgba(57, 32, 12, 0.25),
+        0 0 7px rgba(218, 177, 88, 0.30);
+}
+
+
+/* =========================================================
+   BOOKMARK BUTTON
+   ========================================================= */
+
+input.floatright,
+input.floatright:hover {
+    background:
+        linear-gradient(
+            180deg,
+            #e4c078,
+            #c28c37
+        ) !important;
+
+    border: 1px solid
+        #9d6927 !important;
+
+    border-radius: 7px !important;
+
+    color: var(--brown-dark) !important;
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+a,
+a:link,
+a:visited {
+    color: #8d5d22 !important;
+
+    font-weight: 600;
+
+    transition:
+        color 0.2s ease,
+        text-shadow 0.2s ease;
+}
+
+a:hover {
+    color: #bd8330 !important;
+
+    text-decoration: none;
+
+    text-shadow:
+        0 0 6px rgba(215, 177, 92, 0.40);
+}
+
+
+/* =========================================================
+   DIVIDERS
+   ========================================================= */
+
+hr {
+    border: none;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(164, 112, 39, 0.50),
+            transparent
+        );
+
+    margin: 16px 0;
+}
+
+
+/* =========================================================
+   IMAGES
+   ========================================================= */
+
+img {
+    border-radius: 5px;
+}
+
+
+/* =========================================================
+   SCROLLBARS
+   ========================================================= */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background:
+        rgba(55, 33, 17, 0.55);
+}
+
+::-webkit-scrollbar-thumb {
+    background:
+        linear-gradient(
+            180deg,
+            #d2a34f,
+            #986628
+        );
+
+    border:
+        2px solid
+        rgba(55, 33, 17, 0.55);
+
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background:
+        #e0b968;
+}
+
+
+/* =========================================================
+   TEXT SELECTION
+   ========================================================= */
+
+::selection {
+    background:
+        rgba(205, 157, 70, 0.45);
+
+    color:
+        var(--brown-dark);
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+div.container.footer {
+    background:
+        rgba(62, 38, 19, 0.82) !important;
+
+    color:
+        var(--cream) !important;
+}
+
+div.container.footer a {
+    color:
+        var(--gold-pale) !important;
+}
+
+
+/* =========================================================
+   MOBILE
+   Keep the basic palette on smaller screens.
+   ========================================================= */
+
+@media only screen and (max-width: 767px) {
+
+    .container.main {
+        border-radius: 0 !important;
+    }
+
+    .col-md-9 {
+        border-right: none;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .table {
+        border-radius: 7px;
+    }
+
+}
