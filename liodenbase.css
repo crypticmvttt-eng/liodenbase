@@ -796,14 +796,30 @@ div.container.footer a {
    TOP BAR — CURRENCY + LOGOUT
    ========================================================= */
 
+/* Make all text in the top navigation readable */
 .topbar,
-.topbar * {
+.topbar a,
+.topbar span,
+.topbar div {
     color: #f7edd5 !important;
+}
+
+/* Currency amounts */
+.topbar a[href*="gb"],
+.topbar a[href*="beetle"],
+.topbar a[href*="silver"],
+.topbar a[href*="energy"] {
+    color: #f7edd5 !important;
+}
+
+/* Logout */
+.topbar a[href*="logout"],
+.topbar a[href*="logout"]:visited {
+    color: #f7edd5 !important;
+    font-weight: bold !important;
 }
 
 .topbar a:hover {
     color: #fff8df !important;
-
-    text-shadow:
-        0 0 6px rgba(231, 190, 91, 0.55);
+    text-shadow: 0 0 6px rgba(231, 190, 91, 0.55);
 }
