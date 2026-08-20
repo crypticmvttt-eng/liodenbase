@@ -827,3 +827,108 @@ a[href="/logout.php"]:hover {
     opacity: 1 !important;
     text-shadow: 0 0 6px rgba(231, 190, 91, 0.55) !important;
 }
+
+/* =========================================================
+   V3 — ETHEREAL SUN / GOLDEN DEN
+   Main panels + borders
+   ========================================================= */
+
+/* Main content container */
+.container.main {
+    background: rgba(255, 248, 232, 0.96) !important;
+    border: 1px solid #d5b06a !important;
+    border-radius: 16px !important;
+    box-shadow:
+        0 0 0 4px rgba(213, 176, 106, 0.12),
+        0 8px 30px rgba(76, 43, 22, 0.18) !important;
+    overflow: hidden;
+}
+
+/* Main content area */
+.col-md-9 {
+    background: rgba(255, 250, 240, 0.82) !important;
+}
+
+/* Sidebar */
+.col-md-3 {
+    background: rgba(248, 237, 218, 0.88) !important;
+}
+
+/* General panels / boxes */
+.panel,
+.panel-default,
+.panel-primary,
+.panel-info,
+.panel-warning,
+.panel-success {
+    background: rgba(255, 249, 235, 0.96) !important;
+    border: 1px solid #d5b06a !important;
+    border-radius: 12px !important;
+    box-shadow:
+        0 3px 12px rgba(76, 43, 22, 0.10) !important;
+    overflow: hidden;
+}
+
+/* Panel headings */
+.panel-heading {
+    background: linear-gradient(
+        to bottom,
+        rgba(244, 213, 157, 0.95),
+        rgba(230, 194, 126, 0.95)
+    ) !important;
+    color: #5b351d !important;
+    border-bottom: 1px solid #d0a45a !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-weight: bold !important;
+}
+
+/* Panel body */
+.panel-body {
+    background: rgba(255, 250, 240, 0.94) !important;
+}
+
+/* Tables */
+.table {
+    background: rgba(255, 250, 240, 0.92) !important;
+    border-color: rgba(185, 139, 69, 0.35) !important;
+    border-radius: 10px !important;
+    overflow: hidden;
+}
+
+/* Table cells */
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
+    border-color: rgba(185, 139, 69, 0.28) !important;
+}
+
+/* Alternating table rows */
+.table > tbody > tr:nth-child(even) {
+    background: rgba(244, 225, 186, 0.20) !important;
+}
+
+/* Links inside the main content */
+.container.main a {
+    color: #8a5724 !important;
+}
+
+.container.main a:hover {
+    color: #b47a2d !important;
+    text-decoration: none !important;
+}
+
+/* Headings */
+.container.main h1,
+.container.main h2,
+.container.main h3,
+.container.main h4 {
+    color: #713f1d !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+}
+
+/* Horizontal rules */
+.container.main hr {
+    border-top: 1px solid rgba(181, 137, 69, 0.45) !important;
+    box-shadow: 0 1px 0 rgba(255, 248, 225, 0.8);
+}
