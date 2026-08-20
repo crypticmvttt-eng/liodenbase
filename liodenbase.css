@@ -1359,3 +1359,151 @@ a[href="/logout.php"]:hover {
     color: #96734d !important;
     border-top: 1px solid rgba(166, 124, 63, 0.16) !important;
 }
+/* =========================================================
+   V10 — GILDED GREEK / SUN DETAILS
+   Decorative framing without changing the layout
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   GILDED PANEL FRAME
+   --------------------------------------------------------- */
+
+.panel {
+    border-color: #c99b50 !important;
+    box-shadow:
+        0 2px 8px rgba(76, 43, 22, 0.10),
+        inset 0 0 0 1px rgba(255, 247, 220, 0.9),
+        inset 0 0 0 3px rgba(201, 155, 80, 0.10) !important;
+}
+
+/* Subtle inner double-line effect */
+.panel::after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    border: 1px solid rgba(201, 155, 80, 0.38);
+    border-radius: 7px;
+    pointer-events: none;
+}
+
+/* ---------------------------------------------------------
+   PANEL HEADINGS
+   --------------------------------------------------------- */
+
+.panel-heading {
+    position: relative !important;
+    overflow: hidden;
+    background:
+        linear-gradient(
+            90deg,
+            #e5bd73 0%,
+            #f5dca5 45%,
+            #e5bd73 100%
+        ) !important;
+    border-bottom: 1px solid #b98436 !important;
+    color: #633817 !important;
+    text-shadow: 0 1px rgba(255, 247, 220, 0.7);
+}
+
+/* Fine decorative line across heading */
+.panel-heading::before {
+    content: "";
+    position: absolute;
+    left: 32px;
+    right: 32px;
+    bottom: 3px;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(126, 82, 29, 0.55),
+        transparent
+    );
+}
+
+/* Small gilded flourish */
+.panel-heading::after {
+    content: "✦";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #8f6125;
+    font-size: 12px;
+    text-shadow: 0 0 3px rgba(255, 242, 201, 0.8);
+    pointer-events: none;
+}
+
+/* ---------------------------------------------------------
+   GREEK-INSPIRED DECORATIVE DIVIDERS
+   --------------------------------------------------------- */
+
+.panel-body > hr {
+    border: none !important;
+    height: 5px !important;
+    margin: 16px auto !important;
+    background:
+        linear-gradient(
+            135deg,
+            transparent 35%,
+            rgba(201, 155, 80, 0.65) 36%,
+            rgba(201, 155, 80, 0.65) 45%,
+            transparent 46%
+        ),
+        linear-gradient(
+            45deg,
+            transparent 35%,
+            rgba(201, 155, 80, 0.65) 36%,
+            rgba(201, 155, 80, 0.65) 45%,
+            transparent 46%
+        ) !important;
+    background-size: 14px 5px !important;
+    opacity: 0.65;
+}
+
+/* ---------------------------------------------------------
+   SMALL SUN MOTIF FOR MAJOR HEADINGS
+   --------------------------------------------------------- */
+
+h1,
+h2 {
+    color: #713819 !important;
+    text-shadow: 0 1px rgba(255, 247, 220, 0.7);
+}
+
+/* Decorative golden underline */
+h1::after,
+h2::after {
+    content: "☼";
+    display: block;
+    margin: 5px auto 0;
+    color: #b47a2d;
+    font-size: 13px;
+    line-height: 1;
+    opacity: 0.75;
+}
+
+/* ---------------------------------------------------------
+   GOLDEN LINKS
+   --------------------------------------------------------- */
+
+.panel a {
+    color: #8a5724 !important;
+}
+
+.panel a:hover {
+    color: #b47a2d !important;
+    text-decoration: none !important;
+}
+
+/* ---------------------------------------------------------
+   SUBTLE GOLDEN ACCENT ON HOVER
+   --------------------------------------------------------- */
+
+.panel:hover {
+    border-color: #b98436 !important;
+    box-shadow:
+        0 3px 12px rgba(76, 43, 22, 0.13),
+        inset 0 0 0 1px rgba(255, 247, 220, 0.95),
+        inset 0 0 0 3px rgba(201, 155, 80, 0.12) !important;
+}
