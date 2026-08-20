@@ -834,3 +834,8 @@ body .topbar a[href*="logout"]:hover {
 #silverBeetlesAmt {
     color: #f7edd5 !important;
 }
+   /* Silver Beetle currency */
+#silverBeetlesAmt {
+    color: #f7edd5 !important;
+    text-shadow: none !important;
+}
