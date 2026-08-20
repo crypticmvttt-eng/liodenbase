@@ -1573,39 +1573,39 @@ img[src*="beetleunsorted.png"] {
     object-position: center !important;
 }
 /* =========================================================
-   V14 — SQUARE CAVE IMAGES + IMAGE SWAP
+   V14 — SQUARE CAVE ART + DEEP STONE / BEETLE IMAGE SWAP
    ========================================================= */
 
-/* Cave 1 */
-a[href$="cave.php?id=547903"] > div.cave-grid > img {
-    content: url("https://i.pinimg.com/1200x/fc/cf/89/fccf89521551e7fcfba44ef36786007e.jpg") !important;
-    width: 120px !important;
-    height: 120px !important;
+/* Cave 1 — Deep Stone gets the ORIGINAL Beetle image */
+a[href$="cave.php?id=547903"] .cave-grid img {
+    content: url("https://i.pinimg.com/736x/47/91/79/4791794b1560a23dad27d31304494dbd.jpg") !important;
+    width: 180px !important;
+    height: 180px !important;
     object-fit: cover !important;
     object-position: center !important;
 }
 
 /* Cave 2 */
-a[href$="cave.php?id=550707"] > div.cave-grid > img {
-    content: url("https://i.pinimg.com/736x/47/91/79/4791794b1560a23dad27d31304494dbd.jpg") !important;
-    width: 120px !important;
-    height: 120px !important;
+a[href$="cave.php?id=550707"] .cave-grid img {
+    content: url("https://i.pinimg.com/1200x/63/22/4f/63224f61d471d4622caa45a57690eabd.jpg") !important;
+    width: 180px !important;
+    height: 180px !important;
     object-fit: cover !important;
     object-position: center !important;
 }
 
 /* Cave 3 */
-a[href$="cave.php?id=550023"] > div.cave-grid > img {
+a[href$="cave.php?id=550023"] .cave-grid img {
     content: url("https://i.pinimg.com/736x/cc/97/5e/cc975e20fb7377a040d404003d3f2f3c.jpg") !important;
-    width: 120px !important;
-    height: 120px !important;
+    width: 180px !important;
+    height: 180px !important;
     object-fit: cover !important;
     object-position: center !important;
 }
 
-/* Unsorted Beetles — swapped image */
+/* Unsorted Beetles — gets the ORIGINAL Deep Stone image */
 img[src*="beetleunsorted.png"] {
-    content: url("https://i.pinimg.com/1200x/63/22/4f/63224f61d471d4622caa45a57690eabd.jpg") !important;
+    content: url("https://i.pinimg.com/1200x/fc/cf/89/fccf89521551e7fcfba44ef36786007e.jpg") !important;
     width: 260px !important;
     height: 60px !important;
     object-fit: cover !important;
