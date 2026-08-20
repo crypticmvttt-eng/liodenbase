@@ -793,3 +793,18 @@ div.container.footer a {
     }
 
 }
+/* =========================================================
+   TOP BAR TEXT
+   ========================================================= */
+
+.topbar,
+.topbar * {
+    color: #f7edd5 !important;
+}
+
+.topbar a:hover {
+    color: #fff8df !important;
+
+    text-shadow:
+        0 0 6px rgba(231, 190, 91, 0.55);
+}
