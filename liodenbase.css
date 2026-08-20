@@ -797,54 +797,23 @@ div.container.footer a {
    TOP BAR — CURRENCY + LOGOUT
    ========================================================= */
 
-/* Force the top bar text to stay cream */
-body .topbar,
-body .topbar a,
-body .topbar span,
-body .topbar div,
-body .topbar li,
-body .topbar li a {
-    color: #f7edd5 !important;
-}
-
-/* Keep links cream even after Lioden's styles load */
-body .topbar a:link,
-body .topbar a:visited {
-    color: #f7edd5 !important;
-
-/* Hover */
-body .topbar a:hover,
-body .topbar a[href*="logout"]:hover {
-    color: #fff8df !important;
-
-    text-shadow:
-        0 0 6px rgba(231, 190, 91, 0.55) !important;
-}
-#silverBeetlesAmt {
-    color: red !important;
-    background: yellow !important;
-}
-/* =========================================================
-   TOP BAR — CURRENCY + LOGOUT
-   ========================================================= */
-
 /* Silver Beetles */
 #silverBeetlesAmt {
-    color: #f7edd5 !important;
+    color: #ecd49b !important;
     text-shadow: none !important;
 }
 
 /* Golden Beetles */
 #goldBeetlesAmt {
-    color: #f7edd5 !important;
+    color: #ecd49b !important;
     text-shadow: none !important;
 }
 
-/* =========================================================
-   LOGOUT
-   ========================================================= */
-
-a[href="/logout.php"] {
+/* Logout */
+a[href="/logout.php"],
+a[href="/logout.php"]:link,
+a[href="/logout.php"]:visited,
+a[href="/logout.php"]:active {
     color: #ecd49b !important;
     opacity: 1 !important;
     font-weight: bold !important;
@@ -852,12 +821,9 @@ a[href="/logout.php"] {
     text-shadow: none !important;
 }
 
-a[href="/logout.php"]:link,
-a[href="/logout.php"]:visited,
-a[href="/logout.php"]:active {
-    color: #ecd49b !important;
-}
-
+/* Logout hover */
 a[href="/logout.php"]:hover {
     color: #f7edd5 !important;
+    opacity: 1 !important;
+    text-shadow: 0 0 6px rgba(231, 190, 91, 0.55) !important;
 }
