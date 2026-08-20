@@ -1326,3 +1326,36 @@ a[href="/logout.php"]:hover {
 #commentBox::-webkit-scrollbar-thumb:hover {
     background: #b98635;
 }
+/* =========================================================
+   V9 — SOFT ALTERNATING COMMENTS
+   ========================================================= */
+
+/* Remove individual comment frames */
+#commentBox .comment {
+    background: #fffaf0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Every second comment gets a slightly darker cream */
+#commentBox .comment:nth-child(even) {
+    background: #f7ecd8 !important;
+}
+
+/* Remove the old inner border from individual comments */
+#commentBox .comment::after {
+    display: none !important;
+}
+
+/* Very subtle separation between messages */
+#commentBox .comment + .comment {
+    border-top: 1px solid rgba(166, 124, 63, 0.18) !important;
+}
+
+/* Keep the final informational message soft and unobtrusive */
+#commentBox .comment:last-child {
+    background: transparent !important;
+    color: #96734d !important;
+    border-top: 1px solid rgba(166, 124, 63, 0.16) !important;
+}
