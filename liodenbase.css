@@ -831,3 +831,31 @@ body .topbar a[href*="logout"]:hover {
     color: red !important;
     background: yellow !important;
 }
+/* =========================================================
+   TOP BAR — CURRENCY + LOGOUT
+   ========================================================= */
+
+/* Silver Beetles */
+#silverBeetlesAmt {
+    color: #f7edd5 !important;
+    text-shadow: none !important;
+}
+
+/* Golden Beetles */
+#goldBeetlesAmt {
+    color: #f7edd5 !important;
+    text-shadow: none !important;
+}
+
+/* Logout */
+.topbar a[href="/logout.php"] {
+    color: #f7edd5 !important;
+    font-weight: bold !important;
+    text-shadow: none !important;
+}
+
+/* Hover */
+.topbar a[href="/logout.php"]:hover {
+    color: #fff8df !important;
+    text-shadow: 0 0 6px rgba(231, 190, 91, 0.55) !important;
+}
