@@ -796,30 +796,34 @@ div.container.footer a {
    TOP BAR — CURRENCY + LOGOUT
    ========================================================= */
 
-/* Make all text in the top navigation readable */
-.topbar,
-.topbar a,
-.topbar span,
-.topbar div {
+/* Force the top bar text to stay cream */
+body .topbar,
+body .topbar a,
+body .topbar span,
+body .topbar div,
+body .topbar li,
+body .topbar li a {
     color: #f7edd5 !important;
 }
 
-/* Currency amounts */
-.topbar a[href*="gb"],
-.topbar a[href*="beetle"],
-.topbar a[href*="silver"],
-.topbar a[href*="energy"] {
+/* Keep links cream even after Lioden's styles load */
+body .topbar a:link,
+body .topbar a:visited {
     color: #f7edd5 !important;
 }
 
 /* Logout */
-.topbar a[href*="logout"],
-.topbar a[href*="logout"]:visited {
+body .topbar a[href*="logout"],
+body .topbar a[href*="logout"]:link,
+body .topbar a[href*="logout"]:visited {
     color: #f7edd5 !important;
-    font-weight: bold !important;
 }
 
-.topbar a:hover {
+/* Hover */
+body .topbar a:hover,
+body .topbar a[href*="logout"]:hover {
     color: #fff8df !important;
-    text-shadow: 0 0 6px rgba(231, 190, 91, 0.55);
+
+    text-shadow:
+        0 0 6px rgba(231, 190, 91, 0.55) !important;
 }
