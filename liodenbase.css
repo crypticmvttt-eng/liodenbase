@@ -1207,7 +1207,6 @@ a[href="/logout.php"]:hover {
     background: transparent !important;
 }
 
-/* Individual comment */
 #commentBox .comment {
     position: relative !important;
     background: #fffaf0 !important;
@@ -1222,7 +1221,6 @@ a[href="/logout.php"]:hover {
         0 2px 6px rgba(76, 43, 22, 0.08) !important;
 }
 
-/* Delicate inner gold frame */
 #commentBox .comment::after {
     content: "";
     position: absolute;
@@ -1232,12 +1230,10 @@ a[href="/logout.php"]:hover {
     pointer-events: none;
 }
 
-/* Comment text */
 #commentBox .commentText {
     color: #51351e !important;
 }
 
-/* Comment links */
 #commentBox .commentText a {
     color: #8a5724 !important;
 }
@@ -1246,12 +1242,10 @@ a[href="/logout.php"]:hover {
     color: #b47a2d !important;
 }
 
-/* Small "by / date" text */
 #commentBox .commentText .text-muted {
     color: #96734d !important;
 }
 
-/* Delete button */
 #commentBox .comment .bad {
     background: #ead09b !important;
     border: 1px solid #c99b50 !important;
