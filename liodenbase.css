@@ -1051,3 +1051,127 @@ a[href="/logout.php"]:hover {
     background: #edcc8c !important;
     color: #4d2b17 !important;
 }
+/* =========================================================
+   V5 — GREEK GILDED FRAMES
+   Subtle filigree + matching message boxes
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   PANEL FRAME
+   --------------------------------------------------------- */
+
+.panel {
+    position: relative;
+    border: 1px solid #c99b50 !important;
+    box-shadow:
+        0 2px 8px rgba(76, 43, 22, 0.10),
+        inset 0 0 0 1px rgba(255, 247, 220, 0.9) !important;
+}
+
+/* Inner decorative line */
+.panel::after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    border: 1px solid rgba(201, 155, 80, 0.32);
+    border-radius: 7px;
+    pointer-events: none;
+}
+
+/* ---------------------------------------------------------
+   GILDED CORNER ORNAMENTS
+   --------------------------------------------------------- */
+
+/* Top-left curl */
+.panel-heading::after {
+    content: "❧";
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    color: rgba(159, 111, 43, 0.65);
+    font-size: 15px;
+    line-height: 1;
+    transform: rotate(-20deg);
+    pointer-events: none;
+}
+
+/* Small ornamental line beneath heading */
+.panel-heading {
+    position: relative;
+    padding-left: 27px !important;
+}
+
+.panel-heading::before {
+    content: "";
+    position: absolute;
+    left: 25px;
+    right: 25px;
+    bottom: 3px;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(159, 111, 43, 0.45),
+        transparent
+    );
+}
+
+/* ---------------------------------------------------------
+   CHAT / MESSAGE BOXES
+   --------------------------------------------------------- */
+
+/* Common Lioden message/comment containers */
+.comment,
+.comment-box,
+.message,
+.message-box,
+.bugbox-comment,
+.comment-container {
+    background: #fffaf0 !important;
+    border: 1px solid #c99b50 !important;
+    border-radius: 8px !important;
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 247, 220, 0.85),
+        0 2px 6px rgba(76, 43, 22, 0.08) !important;
+}
+
+/* Give message headers the same gilded appearance */
+.comment-header,
+.message-header {
+    background: linear-gradient(
+        180deg,
+        #f8dfaa 0%,
+        #e8c47d 100%
+    ) !important;
+    color: #633817 !important;
+    border-bottom: 1px solid #c99b50 !important;
+}
+
+/* ---------------------------------------------------------
+   SMALL GOLDEN ORNAMENT
+   --------------------------------------------------------- */
+
+/* Decorative divider */
+.panel-body > hr {
+    border: none !important;
+    height: 1px !important;
+    margin: 14px auto !important;
+    background: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(201, 155, 80, 0.25) 20%,
+        rgba(201, 155, 80, 0.65) 50%,
+        rgba(201, 155, 80, 0.25) 80%,
+        transparent 100%
+    ) !important;
+}
+
+/* ---------------------------------------------------------
+   GENTLE GOLDEN HOVER
+   --------------------------------------------------------- */
+
+.panel:hover {
+    box-shadow:
+        0 3px 12px rgba(76, 43, 22, 0.13),
+        inset 0 0 0 1px rgba(255, 247, 220, 0.95) !important;
+}
