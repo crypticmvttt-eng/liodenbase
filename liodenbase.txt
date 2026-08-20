@@ -1,0 +1,329 @@
+/* =========================================================
+   GOLDEN SUN — LIODEN DEN CSS
+   Base design
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   COLOUR PALETTE
+   Change these later to adjust the entire theme.
+   --------------------------------------------------------- */
+
+:root {
+    --sun-light: #fff3cf;
+    --cream: #f4dfad;
+    --gold: #d4a44c;
+    --gold-light: #e8c979;
+    --gold-dark: #a8752d;
+    --brown: #4b301c;
+    --brown-dark: #2d1b10;
+    --brown-soft: #68482d;
+    --panel: rgba(255, 244, 213, 0.92);
+    --panel-soft: rgba(244, 223, 173, 0.82);
+    --border: rgba(183, 133, 53, 0.55);
+    --shadow: rgba(63, 37, 14, 0.22);
+}
+
+
+/* ---------------------------------------------------------
+   MAIN PAGE
+   --------------------------------------------------------- */
+
+body {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(255, 218, 126, 0.45) 0%,
+            rgba(255, 218, 126, 0.12) 22%,
+            rgba(255, 218, 126, 0) 50%
+        ),
+        linear-gradient(
+            180deg,
+            #5a3b20 0%,
+            #3c2617 45%,
+            #29190f 100%
+        );
+
+    background-attachment: fixed;
+
+    color: var(--brown);
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 14px;
+}
+
+
+/* ---------------------------------------------------------
+   MAIN CONTENT TABLES
+   --------------------------------------------------------- */
+
+.table {
+    background: var(--panel-soft) !important;
+
+    border: 1px solid var(--border) !important;
+
+    border-radius: 14px;
+
+    border-collapse: separate;
+
+    box-shadow:
+        0 4px 14px var(--shadow);
+
+    overflow: hidden;
+}
+
+
+/* ---------------------------------------------------------
+   TABLE HEADERS
+   --------------------------------------------------------- */
+
+.top,
+.bottom,
+th {
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255, 231, 166, 0.95),
+            rgba(213, 164, 76, 0.88)
+        ) !important;
+
+    color: var(--brown-dark) !important;
+
+    border: none !important;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-weight: bold;
+
+    text-shadow:
+        0 1px 0 rgba(255, 248, 220, 0.7);
+
+    padding: 8px;
+}
+
+
+/* ---------------------------------------------------------
+   INNER TABLES
+   --------------------------------------------------------- */
+
+.inner-table {
+    background: transparent !important;
+
+    border-collapse: separate;
+}
+
+.inner-table .left {
+    background: rgba(255, 239, 198, 0.70) !important;
+
+    color: var(--brown);
+}
+
+.inner-table .right {
+    background: rgba(255, 248, 224, 0.55) !important;
+
+    color: var(--brown-dark);
+}
+
+
+/* ---------------------------------------------------------
+   TERRITORY DESCRIPTION / CONTENT AREAS
+   --------------------------------------------------------- */
+
+.table .left {
+    background: rgba(244, 223, 173, 0.70) !important;
+
+    color: var(--brown);
+}
+
+
+/* ---------------------------------------------------------
+   TEXT
+   --------------------------------------------------------- */
+
+body,
+p,
+div,
+span {
+    color: var(--brown);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--brown-dark);
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    text-shadow:
+        0 1px 0 rgba(255, 244, 213, 0.8);
+}
+
+
+/* ---------------------------------------------------------
+   LINKS
+   --------------------------------------------------------- */
+
+a {
+    color: #8a5b1f;
+
+    font-weight: 600;
+
+    transition:
+        color 0.2s ease,
+        text-shadow 0.2s ease;
+}
+
+a:hover {
+    color: #c28a32;
+
+    text-decoration: none;
+
+    text-shadow:
+        0 0 7px rgba(232, 201, 121, 0.65);
+}
+
+
+/* ---------------------------------------------------------
+   BUTTONS
+   --------------------------------------------------------- */
+
+input[type="button"],
+input[type="submit"],
+button {
+    background:
+        linear-gradient(
+            180deg,
+            #e6bd68,
+            #bd8432
+        ) !important;
+
+    border: 1px solid #956323 !important;
+
+    border-radius: 8px !important;
+
+    color: #3a2413 !important;
+
+    box-shadow:
+        0 2px 6px rgba(63, 37, 14, 0.20);
+
+    text-shadow:
+        0 1px rgba(255, 238, 190, 0.7);
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+button:hover {
+    box-shadow:
+        0 3px 10px rgba(63, 37, 14, 0.30),
+        0 0 8px rgba(232, 201, 121, 0.45);
+
+    transform: translateY(-1px);
+}
+
+
+/* ---------------------------------------------------------
+   INPUTS / DROPDOWNS / TEXTAREAS
+   --------------------------------------------------------- */
+
+input,
+select,
+textarea {
+    background: rgba(255, 248, 226, 0.92) !important;
+
+    border: 1px solid rgba(167, 116, 42, 0.45) !important;
+
+    border-radius: 7px !important;
+
+    color: var(--brown-dark) !important;
+
+    box-shadow:
+        inset 0 1px 3px rgba(78, 45, 17, 0.08);
+}
+
+
+/* ---------------------------------------------------------
+   FORM ELEMENT FOCUS
+   --------------------------------------------------------- */
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--gold) !important;
+
+    outline: none;
+
+    box-shadow:
+        0 0 6px rgba(212, 164, 76, 0.35);
+}
+
+
+/* ---------------------------------------------------------
+   DIVIDERS
+   --------------------------------------------------------- */
+
+hr {
+    border: 0;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(183, 133, 53, 0.65),
+            transparent
+        );
+
+    margin: 14px 0;
+}
+
+
+/* ---------------------------------------------------------
+   IMAGES
+   --------------------------------------------------------- */
+
+img {
+    border-radius: 6px;
+}
+
+
+/* ---------------------------------------------------------
+   SELECTION
+   --------------------------------------------------------- */
+
+::selection {
+    background: rgba(212, 164, 76, 0.45);
+
+    color: var(--brown-dark);
+}
+
+
+/* ---------------------------------------------------------
+   SCROLLBARS
+   --------------------------------------------------------- */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(68, 42, 23, 0.55);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b98232;
+
+    border-radius: 10px;
+
+    border: 2px solid rgba(68, 42, 23, 0.55);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d5a64f;
+}
