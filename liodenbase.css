@@ -810,14 +810,6 @@ body .topbar li a {
 body .topbar a:link,
 body .topbar a:visited {
     color: #f7edd5 !important;
-}
-
-/* Logout */
-body .topbar a[href*="logout"],
-body .topbar a[href*="logout"]:link,
-body .topbar a[href*="logout"]:visited {
-    color: #f7edd5 !important;
-}
 
 /* Hover */
 body .topbar a:hover,
@@ -851,12 +843,7 @@ body .topbar a[href*="logout"]:hover {
    LOGOUT
    ========================================================= */
 
-/* =========================================================
-   TOP BAR — CURRENCY + LOGOUT
-   ========================================================= */
-
-/* Logout */
-.topbar a[href="/logout.php"] {
+a[href="/logout.php"] {
     color: #ecd49b !important;
     opacity: 1 !important;
     font-weight: bold !important;
@@ -864,12 +851,12 @@ body .topbar a[href*="logout"]:hover {
     text-shadow: none !important;
 }
 
-.topbar a[href="/logout.php"]:link,
-.topbar a[href="/logout.php"]:visited,
-.topbar a[href="/logout.php"]:active {
+a[href="/logout.php"]:link,
+a[href="/logout.php"]:visited,
+a[href="/logout.php"]:active {
     color: #ecd49b !important;
 }
 
-.topbar a[href="/logout.php"]:hover {
+a[href="/logout.php"]:hover {
     color: #f7edd5 !important;
 }
