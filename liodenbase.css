@@ -1611,3 +1611,14 @@ img[src*="beetleunsorted.png"] {
     object-fit: cover !important;
     object-position: center !important;
 }
+/* =========================================================
+   V15 — FIX CAVE 1 IMAGE
+   ========================================================= */
+
+a[href$="cave.php?id=547903"] > div.cave-grid > img {
+    content: url("https://i.pinimg.com/736x/47/91/79/4791794b1560a23dad27d31304494dbd.jpg") !important;
+    width: 180px !important;
+    height: 180px !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
