@@ -1507,3 +1507,26 @@ h2::after {
         inset 0 0 0 1px rgba(255, 247, 220, 0.95),
         inset 0 0 0 3px rgba(201, 155, 80, 0.12) !important;
 }
+/* =========================================================
+   V11 — GREEK BACKGROUND IMAGE
+   ========================================================= */
+
+body {
+    background-image: url("https://w.wallhaven.cc/full/y8/wallhaven-y83zgd.png") !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+}
+
+/* Let the background show through the main page */
+.container.main {
+    background: rgba(255, 250, 240, 0.78) !important;
+    box-shadow: none !important;
+}
+
+/* Keep the columns transparent */
+.col-md-9,
+.col-md-3 {
+    background: transparent !important;
+}
