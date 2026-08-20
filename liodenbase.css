@@ -1199,3 +1199,66 @@ a[href="/logout.php"]:hover {
 .chat_dark a:hover {
     color: #9a6829 !important;
 }
+/* =========================================================
+   V7 — GILDED COMMENT BOXES
+   ========================================================= */
+
+#commentBox {
+    background: transparent !important;
+}
+
+/* Individual comment */
+#commentBox .comment {
+    position: relative !important;
+    background: #fffaf0 !important;
+    color: #51351e !important;
+    border: 1px solid #c99b50 !important;
+    border-radius: 8px !important;
+    padding: 8px !important;
+    margin-bottom: 7px !important;
+
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 247, 220, 0.9),
+        0 2px 6px rgba(76, 43, 22, 0.08) !important;
+}
+
+/* Delicate inner gold frame */
+#commentBox .comment::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    border: 1px solid rgba(201, 155, 80, 0.32);
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+/* Comment text */
+#commentBox .commentText {
+    color: #51351e !important;
+}
+
+/* Comment links */
+#commentBox .commentText a {
+    color: #8a5724 !important;
+}
+
+#commentBox .commentText a:hover {
+    color: #b47a2d !important;
+}
+
+/* Small "by / date" text */
+#commentBox .commentText .text-muted {
+    color: #96734d !important;
+}
+
+/* Delete button */
+#commentBox .comment .bad {
+    background: #ead09b !important;
+    border: 1px solid #c99b50 !important;
+    color: #633817 !important;
+    border-radius: 5px !important;
+}
+
+#commentBox .comment .bad:hover {
+    background: #f1dcae !important;
+}
