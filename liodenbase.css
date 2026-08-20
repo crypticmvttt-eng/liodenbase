@@ -837,11 +837,10 @@ a[href="/logout.php"]:hover {
 .container.main {
     background: rgba(255, 248, 232, 0.96) !important;
     border: 1px solid #d5b06a !important;
-    border-radius: 16px !important;
+    border-radius: 0 !important;
     box-shadow:
         0 0 0 4px rgba(213, 176, 106, 0.12),
         0 8px 30px rgba(76, 43, 22, 0.18) !important;
-    overflow: hidden;
 }
 
 /* Main content area */
@@ -866,7 +865,7 @@ a[href="/logout.php"]:hover {
     border-radius: 12px !important;
     box-shadow:
         0 3px 12px rgba(76, 43, 22, 0.10) !important;
-    overflow: hidden;
+   
 }
 
 /* Panel headings */
