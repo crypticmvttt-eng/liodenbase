@@ -1585,24 +1585,6 @@ a[href$="cave.php?id=547903"] .cave-grid img {
     object-position: center !important;
 }
 
-/* Cave 2 */
-a[href$="cave.php?id=550707"] .cave-grid img {
-    content: url("https://i.pinimg.com/1200x/63/22/4f/63224f61d471d4622caa45a57690eabd.jpg") !important;
-    width: 180px !important;
-    height: 180px !important;
-    object-fit: cover !important;
-    object-position: center !important;
-}
-
-/* Cave 3 */
-a[href$="cave.php?id=550023"] .cave-grid img {
-    content: url("https://i.pinimg.com/736x/cc/97/5e/cc975e20fb7377a040d404003d3f2f3c.jpg") !important;
-    width: 180px !important;
-    height: 180px !important;
-    object-fit: cover !important;
-    object-position: center !important;
-}
-
 /* Unsorted Beetles — gets the ORIGINAL Deep Stone image */
 img[src*="beetleunsorted.png"] {
     content: url("https://i.pinimg.com/1200x/fc/cf/89/fccf89521551e7fcfba44ef36786007e.jpg") !important;
@@ -1621,4 +1603,60 @@ a[href$="cave.php?id=547903"] > div.cave-grid > img {
     height: 180px !important;
     object-fit: cover !important;
     object-position: center !important;
+}
+/* ---------------------------------------------------------
+   CAVE 2 — MATCH CAVE 1 SQUARE
+   --------------------------------------------------------- */
+
+a[href="cave.php?id=550707"] > div.cave-grid {
+    width: 180px !important;
+    height: 180px !important;
+    min-width: 180px !important;
+    max-width: 180px !important;
+    min-height: 180px !important;
+    max-height: 180px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+}
+
+a[href="cave.php?id=550707"] > div.cave-grid > img {
+    content: url("https://i.pinimg.com/1200x/63/22/4f/63224f61d471d4622caa45a57690eabd.jpg") !important;
+    width: 180px !important;
+    height: 180px !important;
+    min-width: 180px !important;
+    max-width: 180px !important;
+    min-height: 180px !important;
+    max-height: 180px !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
+}
+
+
+/* ---------------------------------------------------------
+   CAVE 3 — MATCH CAVE 1 SQUARE
+   --------------------------------------------------------- */
+
+a[href="cave.php?id=550023"] > div.cave-grid {
+    width: 180px !important;
+    height: 180px !important;
+    min-width: 180px !important;
+    max-width: 180px !important;
+    min-height: 180px !important;
+    max-height: 180px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+}
+
+a[href="cave.php?id=550023"] > div.cave-grid > img {
+    content: url("https://i.pinimg.com/736x/cc/97/5e/cc975e20fb7377a040d404003d3f2f3c.jpg") !important;
+    width: 180px !important;
+    height: 180px !important;
+    min-width: 180px !important;
+    max-width: 180px !important;
+    min-height: 180px !important;
+    max-height: 180px !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block !important;
 }
