@@ -1549,11 +1549,6 @@ img[src*="prideoverviewbanner.png"] {
     content: url("https://i.pinimg.com/736x/5b/21/2a/5b212a4b4ee9c66f92c4056cd4303fc5.jpg") !important;
 }
 
-/* Den / Cave */
-img[src*="cavedefault.jpg"] {
-    content: url("https://i.pinimg.com/1200x/fc/cf/89/fccf89521551e7fcfba44ef36786007e.jpg") !important;
-}
-
 /* Unsorted Beetles */
 img[src*="beetleunsorted.png"] {
     content: url("https://i.pinimg.com/736x/47/91/79/4791794b1560a23dad27d31304494dbd.jpg") !important;
