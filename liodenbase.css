@@ -827,3 +827,10 @@ body .topbar a[href*="logout"]:hover {
     text-shadow:
         0 0 6px rgba(231, 190, 91, 0.55) !important;
 }
+/* =========================================================
+   SILVER BEETLE AMOUNT
+   ========================================================= */
+
+#silverBeetlesAmt {
+    color: #f7edd5 !important;
+}
