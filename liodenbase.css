@@ -1685,13 +1685,13 @@ a[href="create-mound.php"] .mound-grid {
     margin-right: 0 !important;
 }
 /* =========================================================
-   COMMISSIONS — COMPACT ARTWORK
+   COMMISSIONS — FINAL CLEAN VERSION
    ========================================================= */
 
 .commission-feature {
     display: block !important;
     width: 100% !important;
-    max-width: 720px !important;
+    max-width: 700px !important;
     margin: 0 auto 18px auto !important;
     padding: 0 !important;
     text-align: center !important;
@@ -1699,38 +1699,54 @@ a[href="create-mound.php"] .mound-grid {
 }
 
 
-/* Artwork */
+/* ---------------------------------------------------------
+   ARTWORK
+   --------------------------------------------------------- */
 
 .commission-art-link {
     display: block !important;
+
     width: 100% !important;
-    height: 55px !important;
-    margin: 0 auto !important;
+    height: 45px !important;
+
+    margin: 0 0 4px 0 !important;
     padding: 0 !important;
+
     overflow: hidden !important;
+
     text-align: center !important;
 
     background: transparent !important;
-    border: none !important;
+    border: 0 !important;
     box-shadow: none !important;
 }
 
+
+/*
+   The image itself is deliberately tiny.
+   Using both width AND max-width prevents Lioden's
+   existing image rules from making it larger.
+*/
+
 .commission-art-link img {
-    display: block !important;
+    display: inline-block !important;
 
-    width: 130px !important;
-    height: 55px !important;
+    width: 90px !important;
+    height: 45px !important;
 
-    max-width: 130px !important;
-    max-height: 55px !important;
+    max-width: 90px !important;
+    max-height: 45px !important;
+
+    min-width: 0 !important;
+    min-height: 0 !important;
 
     margin: 0 auto !important;
     padding: 0 !important;
 
     object-fit: contain !important;
-    object-position: center center !important;
+    object-position: center !important;
 
-    border: none !important;
+    border: 0 !important;
     border-radius: 0 !important;
 
     background: transparent !important;
@@ -1738,11 +1754,13 @@ a[href="create-mound.php"] .mound-grid {
 }
 
 
-/* Commission box */
+/* ---------------------------------------------------------
+   COMMISSION BOX
+   --------------------------------------------------------- */
 
 .commission-box {
-    position: relative !important;
     display: block !important;
+    position: relative !important;
 
     width: calc(100% - 30px) !important;
     max-width: 680px !important;
@@ -1764,16 +1782,21 @@ a[href="create-mound.php"] .mound-grid {
     color: #51351e !important;
 
     font-family: Georgia, "Times New Roman", serif !important;
+
     text-align: center !important;
 }
 
 
-/* Inner border */
+/* Inner decorative border */
 
 .commission-box::before {
     content: "" !important;
+
     position: absolute !important;
-    inset: 4px !important;
+    top: 4px !important;
+    right: 4px !important;
+    bottom: 4px !important;
+    left: 4px !important;
 
     border: 1px solid rgba(154, 104, 39, 0.3) !important;
     border-radius: 4px !important;
@@ -1782,12 +1805,15 @@ a[href="create-mound.php"] .mound-grid {
 }
 
 
-/* Title */
+/* ---------------------------------------------------------
+   TITLE
+   --------------------------------------------------------- */
 
 .commission-title {
     display: block !important;
+
     position: relative !important;
-    z-index: 1 !important;
+    z-index: 2 !important;
 
     font-size: 18px !important;
     font-weight: bold !important;
@@ -1797,12 +1823,15 @@ a[href="create-mound.php"] .mound-grid {
 }
 
 
-/* Subtitle */
+/* ---------------------------------------------------------
+   SUBTITLE
+   --------------------------------------------------------- */
 
 .commission-subtitle {
     display: block !important;
+
     position: relative !important;
-    z-index: 1 !important;
+    z-index: 2 !important;
 
     margin-top: 2px !important;
 
@@ -1813,12 +1842,15 @@ a[href="create-mound.php"] .mound-grid {
 }
 
 
-/* Link */
+/* ---------------------------------------------------------
+   COMMISSION LINK
+   --------------------------------------------------------- */
 
 .commission-link {
     display: inline-block !important;
+
     position: relative !important;
-    z-index: 1 !important;
+    z-index: 2 !important;
 
     margin-top: 6px !important;
     padding: 3px 12px !important;
@@ -1843,19 +1875,22 @@ a[href="create-mound.php"] .mound-grid {
 }
 
 
-/* Mobile */
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
 
 @media only screen and (max-width: 767px) {
 
     .commission-art-link {
-        height: 45px !important;
+        height: 40px !important;
     }
 
     .commission-art-link img {
-        width: 105px !important;
-        height: 45px !important;
-        max-width: 105px !important;
-        max-height: 45px !important;
+        width: 75px !important;
+        height: 40px !important;
+
+        max-width: 75px !important;
+        max-height: 40px !important;
     }
 
     .commission-box {
@@ -1865,5 +1900,10 @@ a[href="create-mound.php"] .mound-grid {
 
     .commission-title {
         font-size: 16px !important;
+    }
+
+    .commission-subtitle,
+    .commission-link {
+        font-size: 10px !important;
     }
 }
