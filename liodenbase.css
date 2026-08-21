@@ -516,7 +516,13 @@ td.bottom a {
     box-shadow:
         0 2px 7px rgba(60, 35, 14, 0.10);
 }
-
+/* Force the mound links to match the box width so nothing gets squeezed */
+a[href*="unsorted-beetles.php"],
+a[href="create-mound.php"] {
+    display: block !important;
+    width: 180px !important;
+    margin: 0 auto !important;
+}
 
 /* =========================================================
    FEATURE PANELS
