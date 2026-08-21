@@ -1890,3 +1890,30 @@ a[href="create-mound.php"] .mound-grid {
         max-width: 100% !important;
     }
 }
+/* =========================================================
+   V22 — SMALLER COMMISSION ART
+   ========================================================= */
+
+.commission-art-link img {
+    width: auto !important;
+    max-width: 300px !important;
+    height: 65px !important;
+    margin: 0 auto -2px auto !important;
+    object-fit: contain !important;
+    object-position: center bottom !important;
+}
+
+.commission-feature {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 767px) {
+    .commission-art-link img {
+        max-width: 240px !important;
+        height: 55px !important;
+    }
+}
