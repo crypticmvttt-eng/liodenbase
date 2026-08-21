@@ -1538,11 +1538,16 @@ body {
     background: transparent !important;
 }
 /* =========================================================
-   V16 — CAVE ART + UNSORTED BEETLES IMAGE SWAP
-   (Replaces V13, V14, V15)
+   V18 — CAVE + MOUND ART
+   Matching square artwork and matching card sizes
    ========================================================= */
 
-/* Shared square frame for all custom cave images */
+
+/* =========================================================
+   CUSTOM CAVE IMAGES
+   ========================================================= */
+
+/* Shared square image size */
 a[href$="cave.php?id=547903"] > div.cave-grid > img,
 a[href$="cave.php?id=550707"] > div.cave-grid > img,
 a[href$="cave.php?id=550023"] > div.cave-grid > img {
@@ -1550,84 +1555,112 @@ a[href$="cave.php?id=550023"] > div.cave-grid > img {
     height: 180px !important;
     object-fit: contain !important;
     object-position: center !important;
-    background: #f0dfb8 !important; /* --cream, fills empty space so it matches the theme */
-    border-radius: 6px;
+    background: #f0dfb8 !important;
+    border-radius: 6px !important;
 }
+
 
 /* Cave 1 — Deep Stone */
 a[href$="cave.php?id=547903"] > div.cave-grid > img {
     content: url("https://i.pinimg.com/736x/47/91/79/4791794b1560a23dad27d31304494dbd.jpg") !important;
 }
 
+
 /* Cave 2 */
 a[href$="cave.php?id=550707"] > div.cave-grid > img {
     content: url("https://i.pinimg.com/1200x/81/f7/09/81f709645e9b2a5d35bcea626f8b621b.jpg") !important;
 }
+
 
 /* Cave 3 */
 a[href$="cave.php?id=550023"] > div.cave-grid > img {
     content: url("https://i.pinimg.com/736x/cc/97/5e/cc975e20fb7377a040d404003d3f2f3c.jpg") !important;
 }
 
-/* Match mound-grid width to cave-grid so images aren't squeezed */
-.mound-grid {
-    width: 180px !important;
-    min-width: 180px !important;
-}
 
-/* Unsorted Beetles */
+/* =========================================================
+   UNSORTED BEETLES
+   ========================================================= */
+
 div.mound-grid > img[src*="beetleunsorted.png"] {
     width: 180px !important;
     height: 180px !important;
     object-fit: cover !important;
     object-position: center !important;
-    border-radius: 6px;
+    border-radius: 6px !important;
     content: url("https://i.pinimg.com/1200x/fc/cf/89/fccf89521551e7fcfba44ef36786007e.jpg") !important;
 }
+
+
 /* =========================================================
-   V17 — UNSORTED CAVE / NESTING / PRIDE OVERVIEW BANNERS
+   UNSORTED / NESTING / PRIDE OVERVIEW
    ========================================================= */
 
 div.cave-grid > img[src*="unsortedlionsbanner.png"],
-img[src*="nestingbanner.png"],
-img[src*="prideoverviewbanner.png"] {
+div.cave-grid > img[src*="nestingbanner.png"],
+div.cave-grid > img[src*="prideoverviewbanner.png"] {
     width: 180px !important;
     height: 180px !important;
     object-fit: contain !important;
     object-position: center !important;
-    background: #f0dfb8 !important; /* --cream */
-    border-radius: 6px;
+    background: #f0dfb8 !important;
+    border-radius: 6px !important;
 }
 
+
+/* Unsorted Lions */
 div.cave-grid > img[src*="unsortedlionsbanner.png"] {
     content: url("https://i.pinimg.com/736x/07/af/55/07af5553d6f5afd5d9178864f9358b50.jpg") !important;
 }
 
-img[src*="nestingbanner.png"] {
+
+/* Pregnant Lionesses */
+div.cave-grid > img[src*="nestingbanner.png"] {
     content: url("https://i.pinimg.com/736x/5b/21/2a/5b212a4b4ee9c66f92c4056cd4303fc5.jpg") !important;
 }
 
-img[src*="prideoverviewbanner.png"] {
+
+/* Pride Overview */
+div.cave-grid > img[src*="prideoverviewbanner.png"] {
     content: url("https://i.pinimg.com/1200x/63/22/4f/63224f61d471d4622caa45a57690eabd.jpg") !important;
 }
 
-/* Create Mound */
+
+/* =========================================================
+   CREATE MOUND
+   ========================================================= */
+
 div.mound-grid > img[src*="addbeetlemound.png"] {
     width: 180px !important;
     height: 180px !important;
     object-fit: cover !important;
     object-position: center !important;
-    border-radius: 6px;
+    border-radius: 6px !important;
     content: url("https://i.pinimg.com/736x/39/fb/e5/39fbe5f89a5de4306e45503a07a1b89d.jpg") !important;
 }
-.mound-grid {
-    box-sizing: border-box !important;
-}
-/* Give the mound boxes enough total width for padding + 180px image */
+
+
+/* =========================================================
+   MATCH MOUND CARDS TO CAVE CARDS
+   ========================================================= */
+
+/* The normal cave cards are wider than the 190px
+   mound cards, so make these the same width. */
+
 a[href*="unsorted-beetles.php"] .mound-grid,
 a[href="create-mound.php"] .mound-grid {
-    width: 190px !important;   /* 180px image + 5px padding each side */
-    min-width: 190px !important;
-    padding-left: 5px !important;
-    padding-right: 5px !important;
+    width: 250px !important;
+    min-width: 250px !important;
+    max-width: 250px !important;
+    box-sizing: border-box !important;
+}
+
+
+/* Keep the 180px artwork centred inside the wider card */
+
+a[href*="unsorted-beetles.php"] .mound-grid > img,
+a[href="create-mound.php"] .mound-grid > img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
