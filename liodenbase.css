@@ -1574,12 +1574,12 @@ img[src*="beetleunsorted.png"] {
    V17 — UNSORTED CAVE / NESTING / PRIDE OVERVIEW BANNERS
    ========================================================= */
 
-/* Shared banner frame */
+/* Shared square frame — same sizing as V16 caves */
 div.cave-grid > img[src*="unsortedlionsbanner.png"],
 img[src*="nestingbanner.png"],
 img[src*="prideoverviewbanner.png"] {
-    width: 260px !important;
-    height: 60px !important;
+    width: 180px !important;
+    height: 180px !important;
     object-fit: contain !important;
     object-position: center !important;
     background: #f0dfb8 !important; /* --cream */
