@@ -524,6 +524,7 @@ a[href="create-mound.php"] {
     margin: 0 auto !important;
 }
 
+
 /* =========================================================
    FEATURE PANELS
    King Dynasty / Pride Dynasty / Achievements / Showcase
@@ -1618,4 +1619,12 @@ div.mound-grid > img[src*="addbeetlemound.png"] {
     object-position: center !important;
     border-radius: 6px;
     content: url("https://i.pinimg.com/736x/39/fb/e5/39fbe5f89a5de4306e45503a07a1b89d.jpg") !important;
+}
+.mound-grid {
+    box-sizing: border-box !important;
+}
+/* Remove padding so the 180px image isn't clipped by border-box sizing */
+a[href*="unsorted-beetles.php"] .mound-grid,
+a[href="create-mound.php"] .mound-grid {
+    padding: 0 !important;
 }
