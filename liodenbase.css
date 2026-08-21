@@ -1562,8 +1562,14 @@ a[href$="cave.php?id=550023"] > div.cave-grid > img {
     content: url("https://i.pinimg.com/736x/cc/97/5e/cc975e20fb7377a040d404003d3f2f3c.jpg") !important;
 }
 
+/* Match mound-grid width to cave-grid so images aren't squeezed */
+.mound-grid {
+    width: 180px !important;
+    min-width: 180px !important;
+}
+
 /* Unsorted Beetles */
-img[src*="beetleunsorted.png"] {
+div.mound-grid > img[src*="beetleunsorted.png"] {
     width: 180px !important;
     height: 180px !important;
     object-fit: contain !important;
@@ -1603,7 +1609,7 @@ img[src*="prideoverviewbanner.png"] {
     content: url("https://i.pinimg.com/1200x/63/22/4f/63224f61d471d4622caa45a57690eabd.jpg") !important;
 }
 /* Create Mound */
-img[src*="addbeetlemound.png"] {
+div.mound-grid > img[src*="addbeetlemound.png"] {
     width: 180px !important;
     height: 180px !important;
     object-fit: contain !important;
@@ -1612,3 +1618,9 @@ img[src*="addbeetlemound.png"] {
     border-radius: 6px;
     content: url("https://i.pinimg.com/736x/39/fb/e5/39fbe5f89a5de4306e45503a07a1b89d.jpg") !important;
 }
+
+Replace your existing Unsorted Beetles and Create Mound rules with these versions — they now target div.mound-grid > img specifically (more precise than the generic img[src*=...] selector), and I've added a rule to widen .mound-grid itself so the box isn't cramping the image.
+
+If it's still narrow after this, it likely means .mound-grid has its own !important width rule elsewhere in the file (possibly from the Lioden site's own base stylesheet) overriding this — let me know and I can dig for a more specific selector.
+
+
