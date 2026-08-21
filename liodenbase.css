@@ -1684,3 +1684,262 @@ a[href="create-mound.php"] .mound-grid {
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
+/* =========================================================
+   V20 — COMMISSION ART FEATURE
+   Golden Sun Art / Commissions Banner
+   ========================================================= */
+
+/* Give the main content room for the commission feature */
+.col-md-9 {
+    position: relative !important;
+    padding-top: 185px !important;
+}
+
+
+/* ---------------------------------------------------------
+   COMMISSION BANNER
+   --------------------------------------------------------- */
+
+.art-commission-banner {
+    position: absolute !important;
+    top: 20px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+
+    width: calc(100% - 40px) !important;
+    max-width: 760px !important;
+    height: 145px !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    overflow: hidden !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(240, 223, 184, 0.98) 0%,
+            rgba(247, 237, 213, 0.96) 55%,
+            rgba(238, 218, 177, 0.90) 100%
+        ) !important;
+
+    border: 1px solid #b98635 !important;
+
+    border-radius: 10px !important;
+
+    box-shadow:
+        0 3px 12px rgba(76, 43, 22, 0.16),
+        inset 0 0 0 1px rgba(255, 247, 220, 0.95) !important;
+
+    color: #51351e !important;
+
+    text-decoration: none !important;
+
+    z-index: 50 !important;
+}
+
+
+/* Inner gilded border */
+.art-commission-banner::before {
+    content: "" !important;
+
+    position: absolute !important;
+    inset: 5px !important;
+
+    border: 1px solid rgba(154, 104, 39, 0.38) !important;
+
+    border-radius: 6px !important;
+
+    pointer-events: none !important;
+}
+
+
+/* Decorative sun */
+.art-commission-banner::after {
+    content: "☼" !important;
+
+    position: absolute !important;
+    left: 24px !important;
+    top: 10px !important;
+
+    font-size: 22px !important;
+
+    color: rgba(185, 134, 53, 0.55) !important;
+
+    pointer-events: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   TEXT
+   --------------------------------------------------------- */
+
+.art-commission-text {
+    position: relative !important;
+
+    z-index: 3 !important;
+
+    width: 52% !important;
+
+    padding-left: 38px !important;
+
+    text-align: center !important;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif !important;
+
+    color: #51351e !important;
+}
+
+
+.art-commission-title {
+    display: block !important;
+
+    margin-bottom: 5px !important;
+
+    font-size: 27px !important;
+
+    font-weight: bold !important;
+
+    letter-spacing: 1px !important;
+
+    color: #704b29 !important;
+
+    text-shadow:
+        0 1px rgba(255, 247, 220, 0.9) !important;
+}
+
+
+.art-commission-subtitle {
+    display: block !important;
+
+    font-size: 13px !important;
+
+    font-style: italic !important;
+
+    color: #9a6827 !important;
+
+    letter-spacing: 0.3px !important;
+}
+
+
+.art-commission-click {
+    display: inline-block !important;
+
+    margin-top: 9px !important;
+
+    padding: 4px 13px !important;
+
+    background:
+        rgba(216, 179, 97, 0.28) !important;
+
+    border: 1px solid
+        rgba(154, 104, 39, 0.40) !important;
+
+    border-radius: 5px !important;
+
+    font-size: 11px !important;
+
+    font-weight: bold !important;
+
+    color: #704b29 !important;
+
+    letter-spacing: 0.4px !important;
+}
+
+
+/* ---------------------------------------------------------
+   ARTWORK
+   --------------------------------------------------------- */
+
+.art-commission-image {
+    position: absolute !important;
+
+    right: 5px !important;
+    bottom: -18px !important;
+
+    width: 50% !important;
+    max-width: 390px !important;
+    height: 175px !important;
+
+    object-fit: contain !important;
+    object-position: center bottom !important;
+
+    border-radius: 0 !important;
+
+    z-index: 2 !important;
+
+    pointer-events: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   HOVER
+   --------------------------------------------------------- */
+
+.art-commission-banner:hover {
+    border-color: #9a6827 !important;
+
+    box-shadow:
+        0 4px 15px rgba(76, 43, 22, 0.20),
+        0 0 10px rgba(216, 179, 97, 0.20),
+        inset 0 0 0 1px rgba(255, 247, 220, 0.95) !important;
+
+    text-decoration: none !important;
+}
+
+
+.art-commission-banner:hover .art-commission-click {
+    background:
+        rgba(216, 179, 97, 0.45) !important;
+
+    color: #51351e !important;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+   --------------------------------------------------------- */
+
+@media only screen and (max-width: 767px) {
+
+    .col-md-9 {
+        padding-top: 155px !important;
+    }
+
+    .art-commission-banner {
+        width: calc(100% - 20px) !important;
+        height: 120px !important;
+    }
+
+    .art-commission-text {
+        width: 58% !important;
+        padding-left: 15px !important;
+    }
+
+    .art-commission-title {
+        font-size: 20px !important;
+    }
+
+    .art-commission-subtitle {
+        font-size: 11px !important;
+    }
+
+    .art-commission-click {
+        font-size: 10px !important;
+        margin-top: 6px !important;
+    }
+
+    .art-commission-image {
+        width: 48% !important;
+        height: 140px !important;
+        bottom: -12px !important;
+    }
+
+    .art-commission-banner::after {
+        left: 12px !important;
+        font-size: 17px !important;
+    }
+}
