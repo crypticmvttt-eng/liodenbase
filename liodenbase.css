@@ -1581,7 +1581,6 @@ div.mound-grid > img[src*="beetleunsorted.png"] {
    V17 — UNSORTED CAVE / NESTING / PRIDE OVERVIEW BANNERS
    ========================================================= */
 
-/* Shared square frame — same sizing as V16 caves */
 div.cave-grid > img[src*="unsortedlionsbanner.png"],
 img[src*="nestingbanner.png"],
 img[src*="prideoverviewbanner.png"] {
@@ -1593,19 +1592,18 @@ img[src*="prideoverviewbanner.png"] {
     border-radius: 6px;
 }
 
-/* Unsorted Cave banner */
 div.cave-grid > img[src*="unsortedlionsbanner.png"] {
     content: url("https://i.pinimg.com/736x/07/af/55/07af5553d6f5afd5d9178864f9358b50.jpg") !important;
 }
 
-/* Pregnant Lioness (Nesting) banner */
 img[src*="nestingbanner.png"] {
     content: url("https://i.pinimg.com/736x/5b/21/2a/5b212a4b4ee9c66f92c4056cd4303fc5.jpg") !important;
 }
 
-/* Pride Overview banner */
 img[src*="prideoverviewbanner.png"] {
     content: url("https://i.pinimg.com/1200x/63/22/4f/63224f61d471d4622caa45a57690eabd.jpg") !important;
+}
+
 /* Create Mound */
 div.mound-grid > img[src*="addbeetlemound.png"] {
     width: 180px !important;
@@ -1615,5 +1613,3 @@ div.mound-grid > img[src*="addbeetlemound.png"] {
     border-radius: 6px;
     content: url("https://i.pinimg.com/736x/39/fb/e5/39fbe5f89a5de4306e45503a07a1b89d.jpg") !important;
 }
-
-
