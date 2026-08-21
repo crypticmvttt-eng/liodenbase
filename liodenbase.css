@@ -1685,7 +1685,7 @@ a[href="create-mound.php"] .mound-grid {
     margin-right: 0 !important;
 }
 /* =========================================================
-   COMMISSIONS — GREEK GOLDEN SUN FEATURE
+   COMMISSIONS — COMPACT ARTWORK
    ========================================================= */
 
 .commission-feature {
@@ -1699,53 +1699,50 @@ a[href="create-mound.php"] .mound-grid {
 }
 
 
-/* ---------------------------------------------------------
-   ARTWORK
-   --------------------------------------------------------- */
+/* Artwork */
 
 .commission-art-link {
     display: block !important;
     width: 100% !important;
-    height: 105px !important;
+    height: 55px !important;
     margin: 0 auto !important;
     padding: 0 !important;
+    overflow: hidden !important;
     text-align: center !important;
+
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
-    overflow: hidden !important;
 }
 
 .commission-art-link img {
     display: block !important;
 
-    width: 220px !important;
-    height: 105px !important;
+    width: 130px !important;
+    height: 55px !important;
 
-    max-width: 220px !important;
-    max-height: 105px !important;
+    max-width: 130px !important;
+    max-height: 55px !important;
 
     margin: 0 auto !important;
     padding: 0 !important;
 
     object-fit: contain !important;
-    object-position: center bottom !important;
+    object-position: center center !important;
 
     border: none !important;
     border-radius: 0 !important;
-    box-shadow: none !important;
+
     background: transparent !important;
+    box-shadow: none !important;
 }
 
 
-/* ---------------------------------------------------------
-   COMMISSION BOX
-   --------------------------------------------------------- */
+/* Commission box */
 
 .commission-box {
-    display: block !important;
-
     position: relative !important;
+    display: block !important;
 
     width: calc(100% - 30px) !important;
     max-width: 680px !important;
@@ -1771,11 +1768,10 @@ a[href="create-mound.php"] .mound-grid {
 }
 
 
-/* Inner gold line */
+/* Inner border */
 
 .commission-box::before {
     content: "" !important;
-
     position: absolute !important;
     inset: 4px !important;
 
@@ -1786,32 +1782,25 @@ a[href="create-mound.php"] .mound-grid {
 }
 
 
-/* ---------------------------------------------------------
-   TITLE
-   --------------------------------------------------------- */
+/* Title */
 
 .commission-title {
     display: block !important;
-
     position: relative !important;
     z-index: 1 !important;
 
     font-size: 18px !important;
     font-weight: bold !important;
-
     letter-spacing: 1px !important;
 
     color: #704b29 !important;
 }
 
 
-/* ---------------------------------------------------------
-   SUBTITLE
-   --------------------------------------------------------- */
+/* Subtitle */
 
 .commission-subtitle {
     display: block !important;
-
     position: relative !important;
     z-index: 1 !important;
 
@@ -1824,13 +1813,10 @@ a[href="create-mound.php"] .mound-grid {
 }
 
 
-/* ---------------------------------------------------------
-   CLICKABLE LINK
-   --------------------------------------------------------- */
+/* Link */
 
 .commission-link {
     display: inline-block !important;
-
     position: relative !important;
     z-index: 1 !important;
 
@@ -1857,25 +1843,19 @@ a[href="create-mound.php"] .mound-grid {
 }
 
 
-/* ---------------------------------------------------------
-   MOBILE
-   --------------------------------------------------------- */
+/* Mobile */
 
 @media only screen and (max-width: 767px) {
 
-    .commission-feature {
-        max-width: 100% !important;
-    }
-
     .commission-art-link {
-        height: 85px !important;
+        height: 45px !important;
     }
 
     .commission-art-link img {
-        width: 180px !important;
-        height: 85px !important;
-        max-width: 180px !important;
-        max-height: 85px !important;
+        width: 105px !important;
+        height: 45px !important;
+        max-width: 105px !important;
+        max-height: 45px !important;
     }
 
     .commission-box {
