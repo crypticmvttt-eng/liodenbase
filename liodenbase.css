@@ -1554,7 +1554,7 @@ a[href$="cave.php?id=547903"] > div.cave-grid > img {
 
 /* Cave 2 */
 a[href$="cave.php?id=550707"] > div.cave-grid > img {
-    content: url("https://i.pinimg.com/1200x/63/22/4f/63224f61d471d4622caa45a57690eabd.jpg") !important;
+    content: url("https://i.pinimg.com/1200x/81/f7/09/81f709645e9b2a5d35bcea626f8b621b.jpg") !important;
 }
 
 /* Cave 3 */
@@ -1569,4 +1569,34 @@ img[src*="beetleunsorted.png"] {
     height: 60px !important;
     object-fit: cover !important;
     object-position: center !important;
+}
+/* =========================================================
+   V17 — UNSORTED CAVE / NESTING / PRIDE OVERVIEW BANNERS
+   ========================================================= */
+
+/* Shared banner frame */
+div.cave-grid > img[src*="unsortedlionsbanner.png"],
+img[src*="nestingbanner.png"],
+img[src*="prideoverviewbanner.png"] {
+    width: 260px !important;
+    height: 60px !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    background: #f0dfb8 !important; /* --cream */
+    border-radius: 6px;
+}
+
+/* Unsorted Cave banner */
+div.cave-grid > img[src*="unsortedlionsbanner.png"] {
+    content: url("https://i.pinimg.com/736x/07/af/55/07af5553d6f5afd5d9178864f9358b50.jpg") !important;
+}
+
+/* Pregnant Lioness (Nesting) banner */
+img[src*="nestingbanner.png"] {
+    content: url("https://i.pinimg.com/736x/5b/21/2a/5b212a4b4ee9c66f92c4056cd4303fc5.jpg") !important;
+}
+
+/* Pride Overview banner */
+img[src*="prideoverviewbanner.png"] {
+    content: url("https://i.pinimg.com/1200x/63/22/4f/63224f61d471d4622caa45a57690eabd.jpg") !important;
 }
