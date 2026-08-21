@@ -1708,13 +1708,15 @@ a[href="create-mound.php"] .mound-grid {
 .commission-art img {
     position: absolute !important;
     left: 0;
-    bottom: -20;
+    bottom: 0;
 
     width: 100% !important;
     height: auto !important;
 
     max-width: none !important;
     border-radius: 0 !important;
+
+    transform: translateY(10px);
 }
 
 /* Commission box */
