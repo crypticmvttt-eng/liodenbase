@@ -1564,11 +1564,13 @@ a[href$="cave.php?id=550023"] > div.cave-grid > img {
 
 /* Unsorted Beetles */
 img[src*="beetleunsorted.png"] {
-    content: url("https://i.pinimg.com/1200x/fc/cf/89/fccf89521551e7fcfba44ef36786007e.jpg") !important;
-    width: 260px !important;
-    height: 60px !important;
-    object-fit: cover !important;
+    width: 180px !important;
+    height: 180px !important;
+    object-fit: contain !important;
     object-position: center !important;
+    background: #f0dfb8 !important; /* --cream */
+    border-radius: 6px;
+    content: url("https://i.pinimg.com/1200x/fc/cf/89/fccf89521551e7fcfba44ef36786007e.jpg") !important;
 }
 /* =========================================================
    V17 — UNSORTED CAVE / NESTING / PRIDE OVERVIEW BANNERS
@@ -1599,4 +1601,14 @@ img[src*="nestingbanner.png"] {
 /* Pride Overview banner */
 img[src*="prideoverviewbanner.png"] {
     content: url("https://i.pinimg.com/1200x/63/22/4f/63224f61d471d4622caa45a57690eabd.jpg") !important;
+}
+/* Create Mound */
+img[src*="addbeetlemound.png"] {
+    width: 180px !important;
+    height: 180px !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    background: #f0dfb8 !important; /* --cream */
+    border-radius: 6px;
+    content: url("https://i.pinimg.com/736x/39/fb/e5/39fbe5f89a5de4306e45503a07a1b89d.jpg") !important;
 }
