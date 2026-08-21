@@ -1850,3 +1850,43 @@ a[href="create-mound.php"] .mound-grid {
         font-size: 10px !important;
     }
 }
+/* =========================================================
+   V21 — COMMISSION ART SIZE
+   ========================================================= */
+
+.commission-feature {
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+}
+
+
+/* Make the artwork compact and similar in width
+   to the commission box */
+
+.commission-art-link img {
+    display: block !important;
+    width: auto !important;
+    max-width: 700px !important;
+    height: 95px !important;
+    margin: 0 auto -2px auto !important;
+    object-fit: contain !important;
+    object-position: center bottom !important;
+}
+
+
+/* Remove any excessive space above the feature */
+
+.commission-feature {
+    padding-top: 0 !important;
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 767px) {
+
+    .commission-art-link img {
+        height: 75px !important;
+        max-width: 100% !important;
+    }
+}
