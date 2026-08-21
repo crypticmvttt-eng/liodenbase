@@ -1664,3 +1664,23 @@ a[href="create-mound.php"] .mound-grid > img {
     margin-left: auto !important;
     margin-right: auto !important;
 }
+/* =========================================================
+   V19 — ALIGN CREATE MOUND
+   ========================================================= */
+
+/* Move Create Mound into line with the second cave column */
+a[href="create-mound.php"] {
+    width: 250px !important;
+    min-width: 250px !important;
+    max-width: 250px !important;
+    margin-left: 70px !important;
+    margin-right: 0 !important;
+}
+
+a[href="create-mound.php"] .mound-grid {
+    width: 250px !important;
+    min-width: 250px !important;
+    max-width: 250px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
