@@ -1684,3 +1684,149 @@ a[href="create-mound.php"] .mound-grid {
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
+/* =========================================================
+   COMMISSION BANNER
+   ========================================================= */
+
+.commission-feature {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto 18px auto;
+    text-align: center;
+}
+
+/* Artwork area */
+.commission-art {
+    position: relative;
+    width: 100%;
+    height: 155px;
+    overflow: hidden;
+    margin: 0 auto 6px auto;
+    border-radius: 8px;
+}
+
+.commission-art img {
+    position: absolute !important;
+    left: 0;
+    bottom: 0;
+
+    width: 100% !important;
+    height: auto !important;
+
+    max-width: none !important;
+    border-radius: 0 !important;
+}
+
+/* Commission box */
+.commission-box {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 10px 16px;
+
+    background: #fffaf0;
+    border: 1px solid #c99b50;
+    border-radius: 8px;
+
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 247, 220, 0.9),
+        inset 0 0 0 3px rgba(201, 155, 80, 0.10),
+        0 2px 8px rgba(76, 43, 22, 0.10);
+
+    color: #51351e;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.25s ease;
+}
+
+/* Inner decorative frame */
+.commission-box::before {
+    content: "";
+    position: absolute;
+    inset: 4px;
+
+    border: 1px solid rgba(201, 155, 80, 0.32);
+    border-radius: 5px;
+
+    pointer-events: none;
+}
+
+/* Title */
+.commission-title {
+    position: relative;
+    z-index: 2;
+
+    display: block;
+
+    color: #713f1d !important;
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    text-decoration: none !important;
+}
+
+/* Small subtitle */
+.commission-subtitle {
+    position: relative;
+    z-index: 2;
+
+    display: block;
+    margin-top: 2px;
+
+    color: #8a5724;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 11px;
+    font-style: italic;
+}
+
+/* Make the whole box clickable */
+.commission-box a {
+    display: block;
+    text-decoration: none !important;
+}
+
+.commission-box:hover {
+    border-color: #b98436;
+
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 247, 220, 0.95),
+        inset 0 0 0 3px rgba(201, 155, 80, 0.14),
+        0 4px 12px rgba(76, 43, 22, 0.15);
+
+    transform: translateY(-1px);
+}
+
+.commission-box:hover .commission-title {
+    color: #b47a2d !important;
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+
+    .commission-feature {
+        width: 100%;
+    }
+
+    .commission-art {
+        height: 115px;
+    }
+
+    .commission-box {
+        padding: 9px 12px;
+    }
+
+    .commission-title {
+        font-size: 15px;
+    }
+
+    .commission-subtitle {
+        font-size: 10px;
+    }
+}
