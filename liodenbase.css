@@ -1623,8 +1623,11 @@ div.mound-grid > img[src*="addbeetlemound.png"] {
 .mound-grid {
     box-sizing: border-box !important;
 }
-/* Remove padding so the 180px image isn't clipped by border-box sizing */
+/* Give the mound boxes enough total width for padding + 180px image */
 a[href*="unsorted-beetles.php"] .mound-grid,
 a[href="create-mound.php"] .mound-grid {
-    padding: 0 !important;
+    width: 190px !important;   /* 180px image + 5px padding each side */
+    min-width: 190px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
 }
